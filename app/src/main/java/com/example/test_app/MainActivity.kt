@@ -3,11 +3,11 @@ package com.example.test_app
 import android.content.Intent
 import android.os.Bundle
 import android.util.Xml
+import android.widget.ArrayAdapter
 import android.widget.ListView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.test_app.databinding.ActivityMainBinding
 import org.xmlpull.v1.XmlPullParser
-import org.xmlpull.v1.XmlPullParserException
 
 
 class PhonebookEntry(val name: String, val number: String) {
@@ -82,6 +82,9 @@ class MainActivity : AppCompatActivity() {
                     }
                     parser.next()
                 }
+
+                val adapter: ArrayAdapter<String> = ArrayAdapter(this, android.R.layout.simple_list_item_1, arrayList)
+                listView.adapter = adapter
             }
         }
 
