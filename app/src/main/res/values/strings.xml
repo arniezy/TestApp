@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TestApp</string>
+    <string name="brand_text">Бренд</string>
+    <string name="model_text">Модель</string>
+    <string name="os_text">Версия ОС</string>
+    <string name="info_text">Информация об устройстве</string>
+    <string name="name_text">Введите имя</string>
+    <string name="search_text">Поиск</string>
+</resources>
